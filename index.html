@@ -5,9 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web App - Главная страница</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            color: #333;
+        }
+        .button {
+            background-color: #4CAF50; /* Зеленый */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #45a049; /* Темно-зеленый при наведении */
+        }
+    </style>
 </head>
 <body>
     <h1>Добро пожаловать на Главную страницу</h1>
-    <button onclick="window.location.href='page2.html'">Перейти на вторую страницу</button>
+    <button class="button" onclick="window.location.href='page2.html'">Перейти на вторую страницу</button>
 </body>
 </html>
