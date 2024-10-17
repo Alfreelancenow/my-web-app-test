@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Проверка продукта</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Купить продукт</title>
 </head>
 <body>
-    <h1>Введите название продукта для проверки:</h1>
-    <form action="/check_product" method="POST">
-        <label for="product">Продукт:</label>
-        <input type="text" id="product" name="product" required>
+    <h1>Купить продукт</h1>
+    <form action="/buy" method="POST">
+        <label for="product_name">Название продукта:</label>
+        <input type="text" id="product_name" name="product_name" required>
         <button type="submit">Проверить наличие</button>
     </form>
 </body>
